@@ -39,6 +39,7 @@ kubectl apply -f cadvisor.yaml
 
 - Check cadvisor pod name: kubectl get pod -o wide -n kube-system
 - Open port to access cadvisor web UI: kubectl -n kube-system port-forward pod/{replace_this_with_cadvisor_pod_name} 8080:8080
+- On browser go to node_ip:8080
 
 To install Prometheus:
 
